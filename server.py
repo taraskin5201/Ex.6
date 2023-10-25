@@ -18,4 +18,8 @@ for _ in range(100):
     message += b'\n'
     client_socket.sendall(message)
 
+print("Усі повідомлення відправлені")
 
+# Закриття з'єднання
+client_socket.close()
+server_socket.close()
